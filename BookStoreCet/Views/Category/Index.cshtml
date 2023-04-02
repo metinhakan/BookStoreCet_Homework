@@ -1,0 +1,21 @@
+@model List<BookStoreCet.Data.Category>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+    @foreach (var category in Model)
+    {
+        <h4>@category.Id - @category.Name  </h4>
+    }
+</div>
+</body>
+</html>
